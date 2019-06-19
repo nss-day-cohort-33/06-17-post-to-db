@@ -1,3 +1,5 @@
+import { addNewLegoCreation } from "./api.js"
+
 // event listener
 function triggerListener() {
   document.querySelector("#lego-btn").addEventListener("click", () => {

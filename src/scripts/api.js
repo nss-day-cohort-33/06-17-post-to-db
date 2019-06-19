@@ -14,6 +14,15 @@ function addNewLegoCreation(creation) {
   })
 }
 
+function deleteLego(id) {
+  return fetch(`http://localhost:8088/legos/${id}`, {
+    method: "DELETE",
+    headers:{
+      "Content-Type": "application/json"
+    }
+  })
+}
+
 // Let's ignore this one for now, then come back to it in another chapter
 function updateLego(id, shape, creation) {
   fetch(`http://localhost:8088/legos/${id}`)
@@ -32,4 +41,4 @@ function updateLego(id, shape, creation) {
   })
 }
 
-export {getLegos}
+export {getLegos, addNewLegoCreation, deleteLego}
