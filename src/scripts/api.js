@@ -24,8 +24,8 @@ function deleteLego(id) {
 }
 
 // Let's ignore this one for now, then come back to it in another chapter
-function updateLego(id, updatedLego) {
-  fetch(`http://localhost:8088/legos/${id}`, {
+function updateLego(updatedLego) {
+  return fetch(`http://localhost:8088/legos/${updatedLego.id}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json"

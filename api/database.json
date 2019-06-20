@@ -50,18 +50,13 @@
       "id": 168
     },
     {
-      "creator": "freddie",
-      "color": "black",
-      "id": 169
-    },
-    {
       "creator": "fred",
       "color": "red",
       "id": 170
     },
     {
-      "creator": "harry",
-      "color": "black",
+      "creator": "Harry",
+      "color": "red",
       "id": 171
     },
     {
@@ -75,11 +70,6 @@
       "id": 173
     },
     {
-      "creator": "Gertie",
-      "color": "black",
-      "id": 174
-    },
-    {
       "creator": "bubba",
       "color": "red",
       "id": 175
@@ -90,19 +80,14 @@
       "id": 176
     },
     {
-      "creator": "marty",
-      "color": "orange",
+      "creator": "Flibbergippet",
+      "color": "black",
       "id": 177
     },
     {
       "creator": "Patty",
       "color": "black",
       "id": 178
-    },
-    {
-      "creator": "Flibber",
-      "color": "black",
-      "id": 179
     },
     {
       "creator": "Hal",
