@@ -25,4 +25,4 @@ function buildLegoObj(creatorName, color) {
   })
 }
 
-export {triggerListener}
+export {triggerListener, buildLegoObj}
