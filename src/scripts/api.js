@@ -24,21 +24,15 @@ function deleteLego(id) {
 }
 
 // Let's ignore this one for now, then come back to it in another chapter
-function updateLego(id, shape, creation) {
-  fetch(`http://localhost:8088/legos/${id}`)
-  .then( lego => lego.json())
-  .then( lego => {
-    console.log(lego)
-    lego.shape = shape
-    lego.creation = creation
-    fetch(`http://localhost:8088/legos/${id}`, {
-      method: "PUT",
-      headers:{
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(lego)
-    })
+function updateLego(id, updatedLego) {
+  fetch(`http://localhost:8088/legos/${id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(updatedLego)
   })
 }
 
-export {getLegos, addNewLegoCreation, deleteLego}
+
+export {getLegos, addNewLegoCreation, deleteLego, updateLego}
